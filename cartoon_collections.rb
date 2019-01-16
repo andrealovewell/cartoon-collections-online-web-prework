@@ -6,7 +6,7 @@ def roll_call_dwarve(dwarves)
   end
 end
 
-def summon_captain_planet (array) 
+def summon_captain_planet (array)
     array.collect do |i|
       array.uppercase
       array[i] << "!"
