@@ -2,8 +2,7 @@ dwarves = ["Dopey", "Grumpy", "Bashful"]
 
 def roll_call_dwarve(dwarves)
   dwarves.each_with_index do |name, i|
-    message = "#{i+1}. #{name}"
-    puts message
+    puts "#{i+1}. #{name}"
   end
 end
 
