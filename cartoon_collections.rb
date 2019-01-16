@@ -6,15 +6,22 @@ def roll_call_dwarve(dwarves)
   end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet (array) 
+    array.collect do |i|
+      array.uppercase
+      array[i] << "!"
+    end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls (array)
+    array.and? do |i|
+      i.length >4
+    end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(cheese_types)
+  array.find do |i|
+    i == "cheddar" || i == "gouda" || i == "camembert"
+  end
 end
